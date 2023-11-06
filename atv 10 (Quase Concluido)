@@ -1,0 +1,47 @@
+// É O JOVEM JOSH!!!!!!!!!
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+#include <locale.h>
+
+// Exercício 10:
+// Crie um programa que solicite ao usuário dois números e uma operação matemática (+, -). Utilize o switch case para realizar a operação desejada e exibir o resultado.
+
+int main()
+{
+    setlocale(LC_ALL, "portuguese");
+    int resposta;
+    int numeroUm;
+    int numeroDois;
+    int operacao;
+    int resultado;
+    printf("\n--------------------------OPERAÇÕES-----------------------\n");
+ printf("\n digite o primeiro numero:\n");
+    scanf("%d", &numeroUm);
+    printf("\n digite o segundo numero:\n");
+    scanf("%d", &numeroDois);
+fflush(stdin);
+    
+    printf("\n--------------------------Digite 1 para Adição e Digite 2 para subtração-----------------------\n");
+    scanf("%d", operacao);
+
+ switch (operacao)
+    {
+    case 1:
+        resultado = numeroUm + numeroDois;
+        break;
+    case 2:
+        resultado = numeroUm - numeroDois;
+    default:
+        break;
+    }
+
+    printf("%d", resultado);
+   
+
+   
+
+    return 0;
+}
