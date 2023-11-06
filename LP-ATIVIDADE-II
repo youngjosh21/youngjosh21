@@ -1,6 +1,45 @@
 
 
-<!---
-youngjosh21/youngjosh21 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+// É O JOVEM JOSH!!!!!!!!!
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+#include <locale.h>
+#include <strcmp.h>
+
+// Exercício 2:
+// Você é um desenvolvedor de e-commerce e está trabalhando em um novo sistema de descontos.
+// O sistema oferece um desconto de 10% para compras acima de R$ 100,00 se a compra for feita em um dia de semana.
+/////Se a compra for feita em um fim de semana, o desconto será de 15% sobre o valor da compra acima de R$ 100,00.
+
+int main()
+{
+    setlocale(LC_ALL, "portuguese");
+
+    float preco, desc;
+    int(diaDeSemana);
+    int(FimDeSemana);
+    int (compras);
+
+    
+    printf("Qual o valor da compra? ");
+    scanf("%f", &preco);
+
+    printf("Qual o valor do desconto? ");
+    scanf("%f", &desc);
+
+    printf("O valor final e: %.2f", preco - (preco * desc / 100));
+
+    if (compras == diaDeSemana)
+    {
+        /* code */
+    }
+    else
+    {
+        /* code */
+    }
+
+    return 0;
+}
